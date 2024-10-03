@@ -1,3 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Rebecca START */
+
+/* Hero Section Styling */
+#hero {
+    background: url('images/coffe-bean-heart.jpg') no-repeat center center/cover; /* Replace with your own image */
+    color: #fff;
+    height: 40vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for better readability */
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2691e; /* Coffee-like button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: #8b4513; /* Darker shade on hover */
+}
+
+/* Recommendations Section Styling */
+#recommendations {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid layout: large box on top, smaller boxes below */
+.product-large {
+    grid-column: span 2;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.product-smaller {
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-box {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.small-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slider-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rebecca END */
+
+.product-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 /* Grundläggande styling */
 * {
     margin: 0;
