@@ -1,4 +1,3 @@
-
 // JavaScript for the slider loop
 let currentIndex = 0;
 const slider = document.querySelector('.slider');
@@ -12,13 +11,4 @@ function nextSlide() {
 }
 
 // Set interval to change slides every 3 seconds
-setInterval(nextSlide, 6000);
-
-// Simple cart functionality
-let cart = [];
-
-function addToCart(product) {
-    cart.push(product);
-    alert(product + ' has been added to your cart.');
-    console.log('Cart:', cart);
-}
+setInterval(nextSlide, 3000);

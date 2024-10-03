@@ -40,54 +40,9 @@
     background-color: #8b4513; /* Darker shade on hover */
 }
 
-/* Recommendations Section Styling */
-#recommendations {
-    display: grid; /* Grid layout för desktop */
-    gap: 20px;
-    padding: 20px;
-}
 
-/* Grid layout: large box on top, smaller boxes below */
-.product-large {
-    grid-column: span 2;
-    position: relative;
-    overflow: hidden;
-    max-height: 400px;
-}
 
-.product-smaller {
-    display: flex; /* Flexbox för desktop */
-    justify-content: space-around;
-}
 
-.small-box {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-}
-
-.small-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.slider-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
 
 /* Rebecca END */
 
