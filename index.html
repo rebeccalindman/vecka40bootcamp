@@ -6,12 +6,14 @@
     <title>>Dark blend by GBG</title>
     <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
     <script>
-        // Script för att hantera hamburgermenyn
-        function toggleMenu() {
-            const nav = document.querySelector('nav ul');
-            nav.classList.toggle('open');
-        }
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+    
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active'); // Lägger till eller tar bort 'active'-klassen
+        });
     </script>
+    
 </head>
 <body>
     <!-- Wrapper för hela sidan -->
