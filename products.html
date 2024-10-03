@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - Home</title>
+    <title>Coffee Haven - Products</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,18 +19,13 @@
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Welcome to Coffee Haven</h1>
-            <p>Your source for sustainable coffee beans.</p>
-        </section>
-
-        <section id="recommendations">
-            <h2>Our Top Picks</h2>
+        <section id="product-list">
+            <h2>Our Coffee Selection</h2>
             <div class="product-card">
-                <img src="coffee1.jpg" alt="Product 1">
-                <h3>Organic Ethiopian Coffee</h3>
-                <p>Rich and full-bodied flavor.</p>
-                <a href="products.html">Shop Now</a>
+                <img src="coffee2.jpg" alt="Product 2">
+                <h3>Guatemalan Roast</h3>
+                <p>Balanced and smooth taste.</p>
+                <button onclick="addToCart('Guatemalan Roast')">Add to Cart</button>
             </div>
             <!-- Repeat for other products -->
         </section>
@@ -39,5 +34,7 @@
     <footer>
         <p>&copy; 2024 Coffee Haven</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
