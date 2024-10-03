@@ -1,0 +1,150 @@
+/* Grundläggande styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Gör att footern håller sig längst ner */
+}
+
+.wrapper {
+    flex: 1; /* Gör att huvudinnehållet expanderar för att hålla footern längst ner */
+}
+
+/* Header */
+header {
+    background-color: #6b4e31; /* Brun kaffetema */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 120px; /* Storleken på din logotyp */
+    border-radius: 50%; /* Gör bilden rund */
+    overflow: hidden; /* Ser till att inga hörn visas */
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #523b23;
+    border-radius: 5px;
+}
+
+/* Varukorg (simulerad) */
+.cart-link {
+    background-color: #f9c941;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #6b4e31;
+    font-weight: bold;
+}
+
+.cart-link:hover {
+    background-color: #e0b12f;
+}
+
+/* Hamburgermeny-knapp */
+.menu-toggle {
+    display: none; /* Döljs på större skärmar */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    flex-shrink: 0; /* Ser till att footern håller sig längst ner */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    /* Gömmer navigeringsmenyn och visar hamburgermenyn */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #6b4e31;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

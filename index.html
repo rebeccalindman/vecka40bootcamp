@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Dark blend by GBG</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
+    <script>
+        // Script för att hantera hamburgermenyn
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <!-- Wrapper för hela sidan -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="Dark Blend by GBG logo.webp" alt="Dark blend by GBG Logo"> <!-- Ändra till din logga -->
+            </div>
+            <nav>
+                <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> <!-- Hamburgermeny-ikon -->
+                <ul>
+                    <li><a href="#home">Hem</a></li>
+                    <li><a href="#products">Produkter</a></li>
+                    <li><a href="#about">Om Oss</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#cart" class="cart-link">Varukorg (0)</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Resten av din innehåll -->
+
+    </div> <!-- Slut på wrapper -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Integritetspolicy</a></li>
+                <li><a href="#terms">Villkor</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
