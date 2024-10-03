@@ -12,7 +12,7 @@ function nextSlide() {
 }
 
 // Set interval to change slides every 3 seconds
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 6000);
 
 // Simple cart functionality
 let cart = [];
