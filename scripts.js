@@ -22,3 +22,11 @@ function addToCart(product) {
     alert(product + ' has been added to your cart.');
     console.log('Cart:', cart);
 }
+
+// JavaScript for nav-bar
+const hamburger = document.querySelector('.hamburger');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+hamburger.addEventListener('click', () => {
+    dropdownMenu.style.display = dropdownMenu.style.display === 'flex' ? 'none' : 'flex';
+});
