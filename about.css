@@ -1,0 +1,172 @@
+
+/* General styling for team and about sections */
+#about, #team {
+ text-align: center;
+ margin-top: 2rem;
+ padding: 2rem;
+ background-color: #fdf4f4;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2, #team h2 {
+ font-size: 2.5rem;
+ color: #d16b8b;
+ font-family: 'Merriweather', serif;
+}
+
+#about p, #team p {
+ font-size: 1.2rem;
+ color: #555;
+ line-height: 1.8;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 1rem;
+}
+
+#about p::first-letter {
+ font-size: 1.5rem;
+ color: #c88c8c;
+ font-weight: bold;
+}
+
+.team-member {
+ margin-bottom: 2rem;
+ transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+ transform: scale(1.05);
+}
+
+.profile-pic {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ object-fit: cover;
+ transition: box-shadow 0.3s ease-in-out;
+}
+
+.team-member:hover .profile-pic {
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+ font-size: 1.8rem;
+ color: #834c69;
+ margin-top: 1rem;
+}
+
+#social-media {
+ text-align: center;
+ margin: 3rem 0;
+ background-color: #fdf4f4;
+ padding: 2rem;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#social-media h2 {
+ font-family: 'Merriweather', serif;
+ color: #d16b8b;
+ font-size: 2.5rem;
+ margin-bottom: 1rem;
+}
+
+.social-icons {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+}
+
+.social-icon {
+ width: 50px;
+ height: 50px;
+ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+ transform: scale(1.1);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section styles */
+.discover-more {
+    padding: 2rem;
+    text-align: center;
+}
+
+.discover-more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Grid layout for images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom-in hover effect */
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay text */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Display overlay on hover */
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+ .social-icon {
+     width: 40px;
+     height: 40px;
+ }
+
+ #social-media h2 {
+     font-size: 2rem;
+ }
+
+ .profile-pic {
+     width: 120px;
+     height: 120px;
+ }
+
+ #about h2, #team h2 {
+     font-size: 2rem;
+ }
+
+ .team-member h3 {
+     font-size: 1.5rem;
+ }
+}
