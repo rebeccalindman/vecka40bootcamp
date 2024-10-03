@@ -1,0 +1,57 @@
+/* Recommendations Section Styling */
+#recommendations {
+    display: flex;
+    gap: 20px;
+    margin-top: 1rem;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/* Grid layout: large box on top, smaller boxes below */
+.product-large {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.product-smaller {
+    grid-area: product-smaller;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.small-box {
+    flex: 1;
+    /* margin-top: clamp(1%, 2%, 1rem); */
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    height: clamp(200px, 220px, 300px); /* Set a fixed height for consistency */
+    position: relative; /* For positioning the title */
+    min-width: 220px;
+    max-width: 250px, 100%, 350px;
+    border: 2px solid black;
+}
+
+.small-box img {
+    width: 100%;
+    height: 100%; /* Cover the height of the box */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.small-box-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.small-box:hover .small-box-title {
+    opacity: 1; /* Show on hover */
+}

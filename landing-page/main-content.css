@@ -1,47 +1,17 @@
-/* Hero Section Styling */
-#hero {
-    background: url('images/coffe-bean-heart.jpg') no-repeat center center/cover; /* Replace with your own image */
-    color: #fff;
-    height: 40vh; /* Adjust as needed */
-    display: flex; /* För desktop */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 600px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for better readability */
-    border-radius: 10px;
-}
-
-.hero-content h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.hero-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d2691e; /* Coffee-like button color */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.hero-btn:hover {
-    background-color: #8b4513; /* Darker shade on hover */
+.main-content {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 5%; /* Optional: Add padding for breathing room */
+    background-color: rgb(35, 24, 13);
+    /* margin-top: 1%; */
+    box-sizing: content-box;
 }
 
 
 
 
-
-/* Rebecca END */
+@media (min-width: 1600px) {
+    .main-content {
+        max-width: 1400px; /* Increase max-width for very large screens */
+    }
+}
