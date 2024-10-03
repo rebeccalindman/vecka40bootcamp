@@ -1,3 +1,152 @@
+
+/* Grundläggande styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    flex-wrap: nowrap; /* Förhindra att raderna bryts */
+}
+
+.logo img {
+    max-width: 100px;
+    border-radius: 99px;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+.logo a img:hover {
+    opacity: 0.8; /* Gör logotypen lite genomskinlig vid hover */
+    cursor: pointer; /* Ändra muspekaren till en "hand" när användaren hovrar */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Säkerställ att länkarna stannar på samma rad */
+}
+
+.nav-links li {
+    display: inline;
+    white-space: nowrap; /* Se till att texten inte bryts i flera rader */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 780px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #444;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px; /* Minska gap för mindre skärmar */
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+        white-space: nowrap; /* Se till att texten inte bryts i flera rader */
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .cart-button {
+        padding: 8px 12px;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .nav-links {
+        gap: 20px;
+        white-space: nowrap; /* Se till att texten inte bryts i flera rader */
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+}
+
 /* Hero Section Styling */
 #hero {
     background: url('images/coffe-bean-heart.jpg') no-repeat center center/cover; /* Replace with your own image */
@@ -91,225 +240,45 @@
 
 /* Rebecca END */
 
-.product-card {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Footer Styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Mörk bakgrundsfärg */
+    color: white; /* Ljus text för kontrast */
+    padding: 20px 0; /* Tillräckligt med padding för att ge luft mellan elementen */
     text-align: center;
-    padding: 10px;
-}
-
-/* Grundläggande styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Gör att footern håller sig längst ner */
-}
-
-.wrapper {
-    flex: 1; /* Gör att huvudinnehållet expanderar för att hålla footern längst ner */
-}
-
-/* Header */
-header {
-    background-color: #6b4e31; /* Brun kaffetema */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo img {
-    max-width: 120px; /* Storleken på din logotyp */
-    border-radius: 50%; /* Gör bilden rund */
-    overflow: hidden; /* Ser till att inga hörn visas */
-}
-
-nav {
-    position: relative;
-}
-
-/* Standard navigering */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-    font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem);
-}
-
-nav ul li a:hover {
-    background-color: #523b23;
-    border-radius: 5px;
-}
-
-/* Varukorg (simulerad) */
-.cart-link {
-    background-color: #f9c941;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: #6b4e31;
-    font-weight: bold;
-}
-
-.cart-link:hover {
-    background-color: #e0b12f;
-}
-
-/* Hamburgermeny-knapp */
-.menu-toggle {
-    display: none; /* Döljs på större skärmar */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    flex-shrink: 0; /* Ser till att footern håller sig längst ner */
 }
 
 .footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrera innehållet */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px; /* Skapa lite utrymme mellan text och länkar */
+    font-size: 14px; /* Mindre textstorlek för copyright-texten */
+    color: #ccc; /* Ljusare grå färg för sekundär text */
 }
 
 .footer-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px; /* Mellanrum mellan länkar */
 }
 
-.footer-links li a {
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px;
 }
 
-.footer-links li a:hover {
+.footer-links a:hover {
+    color: #FFA500; /* Färgändring vid hover för bättre interaktion */
     text-decoration: underline;
-}
-
-/* Responsiv design */
-/* För skärmar upp till 780px (mobila enheter) */
-@media (max-width: 780px) {
-    .logo img {
-        max-width: 80px; /* Minskar logotypens storlek ytterligare */
-    }
-
-    nav ul {
-        display: none; /* Döljer navigeringen */
-        flex-direction: column; /* För hamburgermenyn */
-        gap: 10px; /* Minska avståndet mellan länkarna */
-        position: absolute; /* Gör att det kan placeras överst */
-        top: 60px; /* Justera så den placeras under headern */
-        background-color: #6b4e31; /* Matchar headerns färg */
-        width: 100%; /* Full bredd */
-        z-index: 999; /* Se till att den är över andra element */
-    }
-
-    nav.active ul {
-        display: grid; /* Visar navigeringen när hamburgermenyn är aktiv */
-        grid-template-columns: repeat(2, 1fr); /* Gör två kolumner */
-    }
-
-    .cart-link {
-        padding: 8px 12px; /* Justera storleken på varukorgsknappen */
-        font-size: 0.9rem; /* Mindre textstorlek */
-    }
-
-    .menu-toggle {
-        display: block; /* Visar hamburgermenyn */
-    }
-
-    #hero {
-        display: grid; /* Använd grid för hero sektionen */
-        place-items: center; /* Centrerar innehållet i grid */
-    }
-}
-
-/* För skärmar mellan 780px och 1025px (surfplattor) */
-@media (min-width: 780px) and (max-width: 1025px) {
-    .logo img {
-        max-width: 100px; /* Minskar logotypens storlek */
-    }
-
-    nav ul {
-        gap: 15px; /* Justera avståndet mellan länkarna */
-    }
-
-    .cart-link {
-        padding: 10px 15px; /* Justera varukorgsknappen */
-        font-size: 1rem; /* Standard textstorlek */
-    }
-
-    .menu-toggle {
-        display: block; /* Visar hamburgermenyn */
-    }
-
-    header {
-        flex-direction: column; /* Ställer in flex-riktning */
-        align-items: center; /* Centrerar elementen */
-    }
-
-    #recommendations {
-        display: grid; /* Använd grid för rekommendationer sektionen */
-        grid-template-columns: repeat(2, 1fr); /* Skapa två kolumner för surfplattor */
-        gap: 20px; /* Justera avståndet */
-    }
-}
-
-/* För skärmar över 1025px (datorer) */
-@media (min-width: 1025px) {
-    .menu-toggle {
-        display: none; /* Döljs på större skärmar */
-    }
-
-    #recommendations {
-        display: grid; /* Fortsätt använda grid för rekommendationer sektionen */
-        grid-template-columns: repeat(3, 1fr); /* Tre kolumner för större skärmar */
-    }
 }
