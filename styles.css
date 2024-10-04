@@ -229,17 +229,7 @@ footer {
         place-items: center; /* Centrerar innehållet i grid */
     }
 
-    #recommendations {
-        display: grid;
-        gap: 20px;
-        margin-top: 1rem;
-        padding: 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "slider wrapper"
-        "product-smaller product-smaller";
-    }
+
 }
 
 /* För skärmar mellan 780px och 1025px (surfplattor) */
@@ -266,10 +256,17 @@ footer {
         align-items: center; /* Centrerar elementen */
     }
 
+   
     #recommendations {
-        display: grid; /* Använd grid för rekommendationer sektionen */
-        grid-template-columns: repeat(2, 1fr); /* Skapa två kolumner för surfplattor */
-        gap: 20px; /* Justera avståndet */
+        display: grid;
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "slider wrapper"
+        "product-smaller product-smaller";
     }
 }
 
@@ -280,7 +277,14 @@ footer {
     }
 
     #recommendations {
-        display: grid; /* Fortsätt använda grid för rekommendationer sektionen */
-        grid-template-columns: repeat(3, 1fr); /* Tre kolumner för större skärmar */
+        display: grid;
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "slider wrapper"
+        "product-smaller product-smaller";
     }
 }
