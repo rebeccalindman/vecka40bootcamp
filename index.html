@@ -21,9 +21,9 @@
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="logo">
             <a href="index.html"><img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG"></a>     
         </div>
@@ -33,9 +33,9 @@
             <li><a href="contact.html">Contacts</a></li>
         </ul>
         <div class="cart">
-            <button class="cart-button">Varukorg</button>
+            <button class="cart-button" aria-label="Open cart">Varukorg</button>
         </div>
-        <button class="hamburger">
+        <button class="hamburger" aria-label="Open navigation menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -47,7 +47,7 @@
         <a href="contact.html">Contacts</a>
     </div>
     
-    <main class="main-content">
+    <main class="main-content" role="main">
         <!--  HERO  -->
         <section id="hero">
             <div class="hero-content">
@@ -74,7 +74,7 @@
             <div class="product-large">
                 <!-- Slider Container -->
                  
-                <div class="slider">
+                <div class="slider" role="region" aria-labelledby="product-slider-title">
                     <div class="slider-item">
                         <img src="images/pouring-coffee.jpg" alt="Coffee 1">
                         <a href="product1.html">Product 1</a>
@@ -118,7 +118,7 @@
     
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
             <ul class="footer-links">
