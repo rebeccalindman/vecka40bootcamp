@@ -1,0 +1,17 @@
+.main-content {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 5%; /* Optional: Add padding for breathing room */
+    background-color: rgb(35, 24, 13);
+    /* margin-top: 1%; */
+    box-sizing: content-box;
+}
+
+
+
+
+@media (min-width: 1600px) {
+    .main-content {
+        max-width: 1400px; /* Increase max-width for very large screens */
+    }
+}

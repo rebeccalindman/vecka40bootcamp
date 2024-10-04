@@ -1,0 +1,45 @@
+
+
+.slider {
+    box-sizing: content-box;
+    grid-area: slider;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 400px; /* Keep consistent height */
+    margin: 0;
+    overflow: hidden; /* Prevent overflow */
+   /*  border: solid 2px blue; /* For debugging */
+   /* border-radius: 10px; */
+  /*  border: solid 10px white; */
+}
+
+.slider-item a {
+    display: none; /* hide link text in default state */
+}
+
+.slider-item img {
+    width: 100%; /* Ensure the image covers full width */
+    height: 100%; /* Make image fill the height */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: inherit;
+}
+
+.wrapper-text-slider {
+    grid-area: wrapper;
+/*     margin-left: -20px;
+    margin-right: -20px; */
+    gap: 20px;
+    background-color: #f5e0c3; /* Light brown background, adjust as needed */
+    padding: 20px;
+    /* border-radius: 10px; /* Optional: for rounded corners */ 
+}
+
+
