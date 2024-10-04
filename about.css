@@ -1,18 +1,3 @@
-/* SKIPLINK */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #4B2E1E; /* Dark brown */
-    color: #F7E4C1; /* Light beige for contrast */
-    padding: 8px;
-    z-index: 100;
-    text-decoration: none;
-}
-
-.skip-link:focus {
-    top: 10px;
-}
 
 body {
     font-size: 1.2rem;
