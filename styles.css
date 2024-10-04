@@ -156,7 +156,7 @@ footer {
     color: white; /* Ljus text för kontrast */
     padding: 20px 0; /* Tillräckligt med padding för att ge luft mellan elementen */
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     width:100%
 }
