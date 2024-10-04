@@ -11,4 +11,10 @@ Stand up 2:
 Checkade vart alla låg med arbetet. Alla verkade klara med sina sidor. Vi hade lite problem vid merge så det behövde lösad. Vi börjar med ARIA-attribut och tema för sidan. Vi pratade lite om sammarbetet också. 
 
 Stand up 3:
-Funktionalitet för produktsidan är klar. Övergripande layout och design är klar för index sidan. Layout fortsätter vi att jobba på och där ingår Wave. Aria  -attribut fixar vi också. Vi uppdaterar trello också
+Funktionalitet för produktsidan är klar. Övergripande layout och design är klar för index sidan. Layout fortsätter vi att jobba på och där ingår Wave. Aria-attribut fixar vi också. Vi uppdaterar trello också.
+
+Stand up 4:
+Har lagt till terms&condition och policy-sidan. ARIA-attribut fixat för kontaktsidan. Produktsidan är nästan helt klar. 
+
+Rebecca har börjat att lägga till chattbot. Thomas fixar ARIA-attributs för about sidan. Gustav och Benjamin fixar prestanda på startsidan. 
+
