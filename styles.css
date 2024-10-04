@@ -159,35 +159,64 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsiv design */
 @media (max-width: 780px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #444;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px; /* Minska gap för mindre skärmar */
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+        white-space: nowrap; /* Se till att texten inte bryts i flera rader */
+    }
+
     .logo img {
         max-width: 80px;
     }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        top: 60px;
-        background-color: #5d4037; /* Medium brown for mobile menu */
-        width: 100%;
-        z-index: 999;
+    .cart-button {
+        padding: 8px 12px;
     }
-
-    nav.active ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* För skärmar över 1025px (datorer) */
-@media (min-width: 1025px) {
-    .menu-toggle {
+    .dropdown-menu{
         display: none;
     }
-
     #recommendations {
         display: grid;
         gap: 20px;
@@ -199,3 +228,29 @@ footer {
         "product-smaller product-smaller";
     }
 }
+
+@media (min-width: 1025px) {
+    .nav-links {
+        gap: 20px;
+        white-space: nowrap; /* Se till att texten inte bryts i flera rader */
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+    #recommendations {
+        display: grid;
+        gap: 20px;
+        margin-top: 1rem;
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "slider wrapper"
+        "product-smaller product-smaller";
+    }
+}
+
+
