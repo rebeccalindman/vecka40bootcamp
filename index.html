@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="landing-page/recommendations.css">
     <link rel="stylesheet" href="landing-page/slider.css">
     <link rel="stylesheet" href="landing-page/main-content.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
    <!--  <script>
         const menuToggle = document.querySelector('.menu-toggle');
@@ -114,8 +115,23 @@
         
     </main>
 
-    <!-- Wrapper för hela sidan -->
-     
+
+
+         <!-- Chatbot Container -->
+<div class="chatbot-container">
+    <button id="chatbot-toggle" class="chatbot-button">Chat with us!</button>
+    <div id="chatbox" class="chatbox">
+        <div class="chatbox-header">
+            <span>Chatbot</span>
+            <button id="chatbox-close" class="chatbox-close">&times;</button>
+        </div>
+        <div class="chatbox-content">
+            <!-- Chat content goes here -->
+            <p>Hello! How can I assist you today?</p>
+        </div>
+        <input type="text" class="chatbox-input" placeholder="Type your message...">
+    </div>
+</div>
     <!-- Footer -->
     <footer role="contentinfo">
         <div class="footer-content">
