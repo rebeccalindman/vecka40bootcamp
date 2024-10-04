@@ -4,12 +4,17 @@ html, body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
+    background-image: url(/bilder/bakgrund.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(/bilder/bakgrund.jpg);
 }
 
 .content-wrapper {
