@@ -13,23 +13,37 @@
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Link to homepage">Home</a></li>
-                <li><a href="products.html" aria-label="Link to our products">Products</a></li>
-                <li><a href="about.html" aria-label="Link to about us">About Us</a></li>
-                <li><a href="contact.html" aria-label="Link to contactpage">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"></a>
+                <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="cart">
+            <button class="cart-button">Varukorg</button>
+        </div>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="dropdown-menu">
+        <a href="products.html">Products</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+    
     <main>
         <!-- About Section -->
         <section id="about">
             <h2>Our Coffee Philosophy</h2>
             <p>
-                At Coffee Haven, we’re more than just a café – we’re a lifestyle. 
+                At Dark Blend, we’re more than just a café – we’re a lifestyle. 
                 Handcrafted from sustainably sourced beans, every cup is brewed with precision, love, and an understanding of the slow coffee culture. We believe in 
                 minimalism, sustainability, and making time for what matters: savoring every sip of an exceptional coffee experience.
             </p>
@@ -192,10 +206,18 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Coffee Haven</p>
+        <div class="footer-content">
+            <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Integritetspolicy</a></li>
+                <li><a href="#terms">Villkor</a></li>
+            </ul>
+        </div>
     </footer>
 
+    <script src="scripts.js"></script>4
     <script src="https://kit.fontawesome.com/5fe23fdbff.js" crossorigin="anonymous"></script>
 </body>
 </html>
