@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Dark Blend by GBG</title>
+    <title>>Dark blend by GBG - Home page</title>
+    <link rel="stylesheet" href="landing-page/hero.css">
+    <link rel="stylesheet" href="landing-page/recommendations.css">
+    <link rel="stylesheet" href="landing-page/slider.css">
+    <link rel="stylesheet" href="landing-page/main-content.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
+   <!--  <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+    
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active'); // Lägger till eller tar bort 'active'-klassen
+        });
+    </script> -->
+    
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"></a>
-                <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+            <a href="index.html"><img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG"></a>     
         </div>
         <ul class="nav-links">
             <li><a href="products.html">Products</a></li>
@@ -31,8 +43,9 @@
         <a href="about.html">About us</a>
         <a href="contact.html">Contacts</a>
     </div>
-    <script src="scripts.js"></script>
-    <main>
+    
+    <main class="main-content">
+        <!--  HERO  -->
         <section id="hero">
             <div class="hero-content">
                 <h1>Your Sustainable Coffee Journey Starts Here</h1>
@@ -41,9 +54,23 @@
             </div>
         </section>
 
+      
+
         <section id="recommendations">
+
+            <div class="wrapper-text-slider">
+                <div class="welcoming-text">
+                    <h2>Welcome to Dark Blend by GBG!</h2>
+                    <p>
+                        At Dark Blend by GBG, we are passionate about bringing you the finest, ethically-sourced coffee
+                        from around the world. Enjoy a sip of our carefully selected blends, and experience a journey of rich flavors and aromas.
+                    </p>
+                </div>
+            </div>
+
             <div class="product-large">
                 <!-- Slider Container -->
+                 
                 <div class="slider">
                     <div class="slider-item">
                         <img src="images/pouring-coffee.jpg" alt="Coffee 1">
@@ -59,33 +86,29 @@
                     </div>
                     <div class="slider-item">
                         <img src="images/ethiopian-coffee-serving-pouring.jpg" alt="Coffee 4">
-                        <a href="product4.html">Product 4</a>
+                        <a href="bilder/bild4.webp">Product</a>
                     </div>
                 </div>
+
             </div>
+
+
             <div class="product-smaller">
                 <div class="small-box">
-                    <img src="highlights/minimalistic-mug.jpg" alt="Small Coffee 1">
-                    <a href="small1.html">Small Product 1</a>
+                    <img src="bilder/bild5.webp" alt="Decaf Coffee">
+                    <div class="small-box-title"><a href="small2.html">Small Product 2</a></div>
                 </div>
                 <div class="small-box">
-                    <img src="images/pink-mug.jpg" alt="Small Coffee 2">
-                    <a href="small2.html">Small Product 2</a>
+                    <img src="bilder/bild4.webp" alt="Text 'French Roast' written across image with coffee beans">
+                    <div class="small-box-title"><a href="small2.html">Small Product 2</a></div>
+                </div>
+                <div class="small-box">
+                    <img src="bilder/bild4.webp" alt="Text 'French Roast' written across image with coffee beans">
+                    <div class="small-box-title"><a href="small2.html">Small Product 2</a></div>
                 </div>
             </div>
         </section>
         
-
-       <!--  <section id="recommendations">
-            <h2>Our Top Picks</h2>
-            <div class="product-card">
-                <img src="images/picking-beans.jpg" alt="Product 1">
-                <h3>Organic Ethiopian Coffee</h3>
-                <p>Rich and full-bodied flavor.</p>
-                <a href="products.html">Shop Now</a>
-            </div> -->
-            <!-- Repeat for other products -->
-        <!-- </section> -->
     </main>
 
     <!-- Wrapper för hela sidan -->
@@ -101,5 +124,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

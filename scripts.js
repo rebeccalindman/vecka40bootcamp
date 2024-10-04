@@ -1,4 +1,3 @@
-
 // JavaScript for the slider loop
 let currentIndex = 0;
 const slider = document.querySelector('.slider');
