@@ -45,14 +45,32 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 30%; /* Cover 30% of the image */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 1.2em; /* Increase font size */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease-in-out;
+    display: flex; /* Use Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
+/* HOVER */
 .small-box:hover .small-box-title {
     opacity: 1; /* Show on hover */
 }
+
+/* link text decorations */
+.small-box .small-box-title a{
+    color: white; /* Change text color to white */
+    text-decoration: none;
+}
+
+/* HOVER link text color decorations */
+.small-box:hover .small-box-title a{
+    color: white; /* Change text color to white */
+    text-decoration: none;
+}
+
