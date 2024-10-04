@@ -1,0 +1,68 @@
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it floats above other elements */
+}
+
+.chatbot-button {
+    background-color: #d2691e; /* Coffee-like color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-button:hover {
+    background-color: #8b4513; /* Darker shade on hover */
+}
+
+.chatbox {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 60px; /* Adjust position above button */
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border: 2px solid #d2691e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.chatbox-header {
+    background-color: #d2691e; /* Coffee-like header */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.chatbox-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.chatbox-content {
+    padding: 10px;
+    max-height: 200px; /* Adjust height */
+    overflow-y: auto;
+}
+
+.chatbox-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d2691e;
+    border-radius: 5px;
+    outline: none;
+}
