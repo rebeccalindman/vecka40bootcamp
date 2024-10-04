@@ -5,63 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Haven - Products</title>
     <link rel="stylesheet" href="produkt.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header and navigation -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+                </a>
+            </div>
+            <ul class="nav-links" role="navigation">
                 <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
+            <div class="cart">
+                <button class="cart-button" aria-label="View shopping cart">Varukorg</button>
+            </div>
+            <button class="hamburger" aria-label="Open mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
+
+    <!-- Main content -->
     <main>
-        <section class="products">
-            <div class="product">
+        <section class="products" aria-labelledby="product-list-heading">
+            <h1 id="product-list-heading" hidden>Product List</h1>
+            
+            <!-- Product items -->
+            <article class="product" aria-label="Espresso Beans">
                 <img src="bilder/bild1.jpg" alt="Espresso Beans">
                 <h2>Espresso Beans</h2>
                 <p>$14.99</p>
-                <button>Add to Cart</button>
-            </div>
+                <button aria-label="Add Espresso Beans to cart">Add to Cart</button>
+            </article>
 
-            <div class="product">
+            <article class="product" aria-label="Arabica Blend">
                 <img src="bilder/bild2.webp" alt="Arabica Blend">
                 <h2>Arabica Blend</h2>
                 <p>$19.99</p>
-                <button>Add to Cart</button>
-            </div>
+                <button aria-label="Add Arabica Blend to cart">Add to Cart</button>
+            </article>
 
-            <div class="product">
+            <article class="product" aria-label="Colombian Coffee">
                 <img src="bilder/bild3.jpg" alt="Colombian Coffee">
                 <h2>Colombian Coffee</h2>
                 <p>$17.99</p>
-                <button>Add to Cart</button>
-            </div>
+                <button aria-label="Add Colombian Coffee to cart">Add to Cart</button>
+            </article>
 
-            <div class="product">
+            <article class="product" aria-label="French Roast">
                 <img src="/bilder/bild4.webp" alt="French Roast">
                 <h2>French Roast</h2>
                 <p>$15.99</p>
-                <button>Add to Cart</button>
-            </div>
+                <button aria-label="Add French Roast to cart">Add to Cart</button>
+            </article>
 
-            <div class="product">
+            <article class="product" aria-label="Decaf Coffee">
                 <img src="/bilder/bild5.webp" alt="Decaf Coffee">
                 <h2>Decaf Coffee</h2>
                 <p>$12.99</p>
-                <button>Add to Cart</button>
-            </div>
+                <button aria-label="Add Decaf Coffee to cart">Add to Cart</button>
+            </article>
+
+            <article class="product" aria-label="Espresso Beans">
+                <img src="bilder/bild6.jpg" alt="Espresso Beans">
+                <h2>Espresso Beans Brazil</h2>
+                <p>$24.99</p>
+                <button aria-label="Add Espresso Beans to cart">Add to Cart</button>
+            </article>
+
+            <article class="product" aria-label="Arabica Blend">
+                <img src="bilder/bild7.png" alt="Arabica Blend">
+                <h2>Colombian Blend</h2>
+                <p>$13.99</p>
+                <button aria-label="Add Arabica Blend to cart">Add to Cart</button>
+            </article>
+
+            <article class="product" aria-label="Colombian Coffee">
+                <img src="bilder/bild8.webp" alt="Colombian Coffee">
+                <h2>Norwiegan Coffee</h2>
+                <p>$1000000.99</p>
+                <button aria-label="Add Colombian Coffee to cart">Add to Cart</button>
+            </article>
+
+            <article class="product" aria-label="French Roast">
+                <img src="/bilder/bild 9.jpg" alt="French Roast">
+                <h2>Italian Roast</h2>
+                <p>$5.99</p>
+                <button aria-label="Add French Roast to cart">Add to Cart</button>
+            </article>
+
+            <article class="product" aria-label="Decaf Coffee">
+                <img src="/bilder/bild 10.jpg" alt="Decaf Coffee">
+                <h2>Double Decaf Coffee</h2>
+                <p>$19.99</p>
+                <button aria-label="Add Decaf Coffee to cart">Add to Cart</button>
+            </article>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Coffee Heaven</p>
+        <div class="footer-content" aria-label="Footer content">
+            <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Integritetspolicy</a></li>
+                <li><a href="#terms">Villkor</a></li>
+            </ul>
+        </div>
     </footer>
-</body>
-</html>
 
+    <!-- JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
