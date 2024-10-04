@@ -8,8 +8,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh; /* Gör att bakgrunden alltid täcker hela höjden */
+    overflow-x: hidden; /* Förhindrar horisontell scroll */
 }
 
 body {
@@ -112,4 +112,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        background-attachment: scroll; /* För att bakgrundsbilden inte ska fastna vid scroll */
+    }
 }
