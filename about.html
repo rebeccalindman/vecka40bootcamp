@@ -1,32 +1,223 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - About Us</title>
+    <title>Dark Blend- About Us</title>
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"></a>
+                <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="cart">
+            <button class="cart-button">Varukorg</button>
+        </div>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="dropdown-menu">
+        <a href="products.html">Products</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+    
     <main>
+        <!-- About Section -->
         <section id="about">
-            <h2>About Coffee Haven</h2>
-            <p>Coffee Haven is dedicated to providing high-quality, sustainable coffee.</p>
+            <h2>Our Coffee Philosophy</h2>
+            <p>
+                At Dark Blend, we’re more than just a café – we’re a lifestyle. 
+                Handcrafted from sustainably sourced beans, every cup is brewed with precision, love, and an understanding of the slow coffee culture. We believe in 
+                minimalism, sustainability, and making time for what matters: savoring every sip of an exceptional coffee experience.
+            </p>
+            <p>
+                With a nod to the golden age of espresso and a commitment to modern-day ethics, we roast our beans locally, ensuring fresh flavors and reducing our environmental footprint. 
+                This is the place where design meets comfort, and where coffee tells a story.
+            </p>
         </section>
+
+        <section id="social-media">
+            <h2>Follow Us on Social Media</h2>
+            <div class="social-icons">
+                <a href="https://instagram.com/darkblend" target="_blank">
+                    <i class="fa-brands fa-square-instagram" aria-label="Follow us on Instagram"></i>
+                </a>
+                <a href="https://linkedin.com/company/darkblend" target="_blank">
+                    <i class="fa-brands fa-linkedin" aria-label="Follow us on Linkedin"></i>
+                </a>
+                <a href="mailto:info@darkblend.com">
+                    <i class="fa-solid fa-square-envelope" aria-label="Send us an email"></i>
+                </a>
+                <a href="contact.html">
+                    <i class="fa-solid fa-circle-question" aria-label="Go to our contactpage"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="images/rebecca.jpg" alt="Rebecca, The Bean Whisperer" class="profile-pic">
+                <h3>Rebecca - The Bean Whisperer</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/darkblend" target="_blank" aria-label="Rebecca's Instagram profile">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/darkblend" target="_blank" aria-label="Rebecca's LinkedIn profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:rebecca@darkblend.com" aria-label="Email Rebecca">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
+                </div>
+                <p>Rebecca loves finding the perfect blend for every mood and occasion. Her expertise in coffee sourcing is unmatched.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/ah.png" alt="Abdikadir, Espresso Enthusiast" class="profile-pic">
+                <h3>Abdikadir - Espresso Enthusiast</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/darkblend" target="_blank" aria-label="Abdikadir's Instagram profile">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/darkblend" target="_blank" aria-label="Abdikadir's LinkedIn profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:abdikadir@darkblend.com" aria-label="Email Abdikadir">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
+                </div>
+                <p>Abdikadir brings a love for strong, bold coffee flavors. He’s our go-to guy for creating the best espresso drinks in town!</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/bb.jpg" alt="Benjamin, Latte Art Genius" class="profile-pic">
+                <h3>Benjamin - Latte Art Genius</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/darkblend" target="_blank" aria-label="Benjamin's Instagram profile">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/darkblend" target="_blank" aria-label="Benjamin's LinkedIn profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:benjamin@darkblend.com" aria-label="Email Benjamin">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
+                </div>
+                   <p>Benjamin turns every cup of coffee into a piece of art. His latte designs are almost too beautiful to drink!</p>
+                </div>
+
+
+                <div class="team-member">
+                    <img src="images/jag.jpg" alt="Gustav, Sustainability Specialist" class="profile-pic">
+                    <h3>Gustav - Sustainability Specialist</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/darkblend" target="_blank" aria-label="Gustav's Instagram profile">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/darkblend" target="_blank" aria-label="Gustav's LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:gustav@darkblend.com" aria-label="Email Gustav">
+                            <i class="fa-solid fa-square-envelope"></i>
+                        </a>
+                    </div>
+                    <p>Gustav ensures that all our coffee practices are eco-friendly and sustainable. His passion is to make coffee guilt-free.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="images/tk.png" alt="Thomas, The Brew Master" class="profile-pic">
+                    <h3>Thomas - The Brew Master</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/darkblend" target="_blank" aria-label="Thomas's Instagram profile">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/darkblend" target="_blank" aria-label="Thomas's LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:thomas@darkblend.com" aria-label="Email Thomas">
+                            <i class="fa-solid fa-square-envelope"></i>
+                        </a>
+                    </div>
+                    <p>Thomas knows every brewing technique imaginable and loves to experiment with new coffee trends.</p>
+                </div>                
+        </section>
+
+        <section class="discover-more">
+            <h2>Ta reda på mer</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="/images/history.jpg" alt="History">
+                    <div class="overlay">
+                        <p>History</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/images/goals.jpg" alt="Goals">
+                    <div class="overlay">
+                        <p>Goals</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/images/motivators.jpg" alt="Motivators">
+                    <div class="overlay">
+                        <p>Motivators</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/images/strategy.jpg" alt="Strategy">
+                    <div class="overlay">
+                        <p>Strategy</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/images/brands.jpg" alt="Our brands">
+                    <div class="overlay">
+                        <p>Our brands</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/images/policies.jpg" alt="Policies and leadership">
+                    <div class="overlay">
+                        <p>Policies and leadership</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Coffee Haven</p>
+        <div class="footer-content">
+            <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Integritetspolicy</a></li>
+                <li><a href="#terms">Villkor</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>4
+    <script src="https://kit.fontawesome.com/5fe23fdbff.js" crossorigin="anonymous"></script>
 </body>
 </html>
