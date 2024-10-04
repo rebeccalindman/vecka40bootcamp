@@ -9,6 +9,7 @@
 
 /* Grid layout: large box on top, smaller boxes below */
 .product-large {
+    box-sizing: content-box;
     position: relative;
     overflow: hidden;
     max-height: 400px;
@@ -26,7 +27,7 @@
     /* margin-top: clamp(1%, 2%, 1rem); */
     text-align: center;
     overflow: hidden; /* Hide overflow */
-    height: clamp(200px, 220px, 300px); /* Set a fixed height for consistency */
+    height: clamp(200px, 250px, 300px); /* Set a fixed height for consistency */
     position: relative; /* For positioning the title */
     min-width: 220px;
     max-width: 250px, 100%, 350px;
