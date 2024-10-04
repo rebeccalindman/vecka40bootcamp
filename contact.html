@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="landing-page/slider.css">
     <link rel="stylesheet" href="landing-page/main-content.css">
     <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
+    <link rel="stylesheet" href="contact.css">
    <!--  <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
@@ -51,16 +52,17 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <form>
+                <!-- Korrekt märkning och autokomplettering -->
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
+                <input type="text" id="name" name="name" required autocomplete="name" aria-required="true">
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
+                <input type="email" id="email" name="email" required autocomplete="email" aria-required="true">
+
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+
+                <button type="submit">Send Message</button> <!-- Mer beskrivande knapptext -->
             </form>
         </section>
     </main>
