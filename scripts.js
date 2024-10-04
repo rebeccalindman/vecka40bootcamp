@@ -50,24 +50,27 @@ const chatboxContent = document.querySelector('.chatbox-content');
 // Function to send user message to the server
 async function sendMessageToChatGPT(message) {
     try {
-        // Append user's message to chatbox
-        appendMessage('User', message);
+        console.log('Sending message to server:', message); // Check what message is being sent
 
         // Make the API call to your server
-        const response = await fetch('http://localhost:3000/chatbot', {
+        const response = await fetch('http://localhost:3001/chatbot', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ message }),
         });
+        
+
+        console.log('Response from server:', response); // Check if a response is received
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const data = await response.json();
-        
+        console.log('Data received from server:', data); // View the data received from server
+
         // Append AI's response to chatbox
         appendMessage('ChatGPT', data.content);
     } catch (error) {
@@ -76,17 +79,21 @@ async function sendMessageToChatGPT(message) {
     }
 }
 
+
 // Function to append message to the chatbox content
 function appendMessage(sender, message) {
+    console.log(`${sender} message added to chatbox:`, message); // Log every message added to chatbox
     const messageElement = document.createElement('p');
     messageElement.textContent = `${sender}: ${message}`;
     chatboxContent.appendChild(messageElement);
     chatboxContent.scrollTop = chatboxContent.scrollHeight; // Auto-scroll to latest message
 }
 
+
 // Event Listener for User Input
 chatboxInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' && chatboxInput.value.trim()) {
+        console.log('User pressed Enter. Message:', chatboxInput.value.trim()); // Debug the message input
         sendMessageToChatGPT(chatboxInput.value.trim());
         chatboxInput.value = ''; // Clear the input field
     }
