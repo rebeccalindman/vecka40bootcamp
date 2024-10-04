@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Dark Blend by GBG</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"></a>
+                <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="cart">
+            <button class="cart-button">Varukorg</button>
+        </div>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="dropdown-menu">
+        <a href="products.html">Products</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+    <script src="scripts.js"></script>
     <main>
         <section id="hero">
-            <h1>Welcome to Coffee Haven</h1>
-            <p>Your source for sustainable coffee beans.</p>
+            <div class="hero-content">
+                <h1>Your Sustainable Coffee Journey Starts Here</h1>
+                <p>Discover the finest selection of ethically sourced coffee beans.</p>
+                <a href="products.html" class="hero-btn">Shop Now</a>
+            </div>
         </section>
 
         <section id="recommendations">
+            <div class="product-large">
+                <!-- Slider Container -->
+                <div class="slider">
+                    <div class="slider-item">
+                        <img src="images/pouring-coffee.jpg" alt="Coffee 1">
+                        <a href="product1.html">Product 1</a>
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/red-coffee-beans.jpg" alt="Coffee 2">
+                        <a href="product2.html">Product 2</a>
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/coffee-truck.jpg" alt="Coffee 3">
+                        <a href="product3.html">Product 3</a>
+                    </div>
+                    <div class="slider-item">
+                        <img src="images/ethiopian-coffee-serving-pouring.jpg" alt="Coffee 4">
+                        <a href="product4.html">Product 4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-smaller">
+                <div class="small-box">
+                    <img src="highlights/minimalistic-mug.jpg" alt="Small Coffee 1">
+                    <a href="small1.html">Small Product 1</a>
+                </div>
+                <div class="small-box">
+                    <img src="images/pink-mug.jpg" alt="Small Coffee 2">
+                    <a href="small2.html">Small Product 2</a>
+                </div>
+            </div>
+        </section>
+        
+
+       <!--  <section id="recommendations">
             <h2>Our Top Picks</h2>
             <div class="product-card">
-                <img src="coffee1.jpg" alt="Product 1">
+                <img src="images/picking-beans.jpg" alt="Product 1">
                 <h3>Organic Ethiopian Coffee</h3>
                 <p>Rich and full-bodied flavor.</p>
                 <a href="products.html">Shop Now</a>
-            </div>
+            </div> -->
             <!-- Repeat for other products -->
-        </section>
+        <!-- </section> -->
     </main>
 
+    <!-- Wrapper för hela sidan -->
+    
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Coffee Haven</p>
+        <div class="footer-content">
+            <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Integritetspolicy</a></li>
+                <li><a href="#terms">Villkor</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
