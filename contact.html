@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>>Dark blend by GBG - Home page</title>
+    <link rel="stylesheet" href="landing-page/hero.css">
+    <link rel="stylesheet" href="landing-page/recommendations.css">
+    <link rel="stylesheet" href="landing-page/slider.css">
+    <link rel="stylesheet" href="landing-page/main-content.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Koppla CSS-filen -->
+   <!--  <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+    
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active'); // Lägger till eller tar bort 'active'-klassen
+        });
+    </script> -->
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"></a>
+                <img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG">
+        </div>
+        <ul class="nav-links">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="cart">
+            <button class="cart-button">Varukorg</button>
+        </div>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="dropdown-menu">
+        <a href="products.html">Products</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contacts</a>
+    </div>
 
     <main>
         <section id="contact">
@@ -36,8 +63,17 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Coffee Haven</p>
-    </footer>
+ <!-- Footer -->
+ <footer>
+    <div class="footer-content">
+        <p>&copy; Dark blend by GBG - Alla rättigheter förbehållna.</p>
+        <ul class="footer-links">
+            <li><a href="#privacy">Integritetspolicy</a></li>
+            <li><a href="#terms">Villkor</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
 </body>
 </html>

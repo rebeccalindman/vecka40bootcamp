@@ -11,6 +11,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
 .navbar {
@@ -155,6 +156,9 @@ footer {
     color: white; /* Ljus text för kontrast */
     padding: 20px 0; /* Tillräckligt med padding för att ge luft mellan elementen */
     text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width:100%
 }
 
 .footer-content {
