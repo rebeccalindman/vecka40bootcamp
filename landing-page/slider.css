@@ -34,12 +34,21 @@
 
 .wrapper-text-slider {
     grid-area: wrapper;
-/*     margin-left: -20px;
-    margin-right: -20px; */
     gap: 20px;
-    background-color: #f5e0c3; /* Light brown background, adjust as needed */
+    background-color: #302623; /* Adjusted darker brown background */
     padding: 20px;
-    /* border-radius: 10px; /* Optional: for rounded corners */ 
+    text-align: center; /* Center align the text */
+}
+
+/* Increase line-height for better readability */
+.wrapper-text-slider h2 {
+    margin-bottom: 15px; /* Add space below heading */
+    line-height: 1.5; /* Optional: Adjust for readability */
+}
+
+.wrapper-text-slider p {
+    line-height: 1.6; /* Increase spacing between lines for better readability */
+    margin-bottom: 15px; /* Space at the bottom */
 }
 
 
