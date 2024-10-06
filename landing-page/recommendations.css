@@ -7,6 +7,8 @@
     flex-wrap: wrap;
 }
 
+#recommendations h2 {display: none;} /* visually hides title for recommendations */
+
 /* Grid layout: large box on top, smaller boxes below */
 .product-large {
     box-sizing: content-box;

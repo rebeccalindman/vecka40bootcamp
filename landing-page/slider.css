@@ -32,6 +32,8 @@
     border-radius: inherit;
 }
 
+.slider h3 {display:none} /* hide title in slider */
+
 .wrapper-text-slider {
     grid-area: wrapper;
     gap: 20px;
