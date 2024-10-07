@@ -18,3 +18,27 @@ Har lagt till terms&condition och policy-sidan. ARIA-attribut fixat för kontakt
 
 Rebecca har börjat att lägga till chattbot. Thomas fixar ARIA-attributs för about sidan. Gustav och Benjamin fixar prestanda på startsidan. 
 
+Stand up 5:
+
+Vi mergar code review på Abdikadirs arbete eftersom att han vabbade i fredags. Vi använde compare funktionen för att se förändringarna och på så sätt kunde vi behålla vår footer och headers men main uppdatertades.
+
+Rebecca skapade en starfish - retro där vi ska ge feedback på arbetet.
+
+Vad vi kom fram till:
+
+-Vi ska vara nöjda med vårt arbete och inte överarbetar och lägga för mycket tid på uppgiften. 
+
+-Mer code review i github så det inte blir conflicts.
+
+-Ha en bättre struktur med mötena så att vi alltid får ut något av det. 
+
+-Förbättra vår kommunikation.
+
+-Inte fastna i eget arbete under möten
+
+-Ha bättre kommunikation mellan varandra så att ingen hamnar efter. Detta kan förbättras med en roller som Scrum master som får ha lite mer koll på alla. 
+
+-Ha effektivare mob-coding.
+
+
+Vi planerar presentationen lite.  Vi börjar med att gå igenom kriterierna. Vi kom fram till att alla kan nämna kort vad dem har gjort och sen tar alla varsitt kriterie som man pratar om. 
