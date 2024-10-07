@@ -1,81 +1,144 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - Home</title>
+    <title>Dark Blend by GBG - Home page</title>
+    <link rel="stylesheet" href="landing-page/hero.css">
+    <link rel="stylesheet" href="landing-page/recommendations.css">
+    <link rel="stylesheet" href="landing-page/slider.css">
+    <link rel="stylesheet" href="landing-page/main-content.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Skip Link for Screen Reader Users -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+    <!-- Main Navigation -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">
+                <a href="index.html"><img src="Dark Blend by GBG logo.webp" alt="Dark Blend by GBG"></a>     
+            </div>
+            <ul class="nav-links">
                 <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
+            <div class="cart">
+                <button class="cart-button" aria-label="Open cart">Varukorg</button>
+            </div>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="dropdown-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
-
-    <main>
-        <section id="hero">
+    
+    <!-- Dropdown Menu for Mobile Navigation -->
+    <div id="dropdown-menu" class="dropdown-menu" aria-hidden="true">
+        <a href="products.html">Products</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contacts</a>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
-                <h1>Your Sustainable Coffee Journey Starts Here</h1>
+                <h1 id="hero-heading">Your Sustainable Coffee Journey Starts Here</h1>
                 <p>Discover the finest selection of ethically sourced coffee beans.</p>
                 <a href="products.html" class="hero-btn">Shop Now</a>
             </div>
         </section>
 
-        <section id="recommendations">
+        <!-- Recommendations Section -->
+        <section id="recommendations" aria-labelledby="recommendations-heading">
+            <h2 id="recommendations-heading" class="visually-hidden">Product Recommendations</h2>
+
+            <!-- Welcoming Text -->
+            <div class="wrapper-text-slider">
+                <div class="welcoming-text">
+                    <h3>Welcome to Dark Blend by GBG!</h3>
+                    <p>
+                        At Dark Blend by GBG, we are passionate about bringing you the finest, ethically-sourced coffee
+                        from around the world. Enjoy a sip of our carefully selected blends, and experience a journey of rich flavors and aromas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slider for Large Products -->
             <div class="product-large">
-                <!-- Slider Container -->
-                <div class="slider">
+                <div class="slider" role="region" aria-labelledby="product-slider-title" aria-live="polite">
+                    <h3 id="product-slider-title" class="visually-hidden">Featured Coffee Products</h3>
                     <div class="slider-item">
-                        <img src="images/pouring-coffee.jpg" alt="Coffee 1">
+                        <img src="images/pouring-coffee.jpg" alt="Coffee being poured">
                         <a href="product1.html">Product 1</a>
                     </div>
                     <div class="slider-item">
-                        <img src="images/red-coffee-beans.jpg" alt="Coffee 2">
+                        <img src="images/red-coffee-beans.jpg" alt="Red coffee beans">
                         <a href="product2.html">Product 2</a>
                     </div>
                     <div class="slider-item">
-                        <img src="images/coffee-truck.jpg" alt="Coffee 3">
+                        <img src="images/coffee-truck.jpg" alt="Coffee truck">
                         <a href="product3.html">Product 3</a>
                     </div>
                     <div class="slider-item">
-                        <img src="images/ethiopian-coffee-serving-pouring.jpg" alt="Coffee 4">
-                        <a href="product4.html">Product 4</a>
+                        <img src="images/ethiopian-coffee-serving-pouring.jpg" alt="Ethiopian coffee serving">
+                        <a href="bilder/bild4.webp">Product 4</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Smaller Products Section -->
             <div class="product-smaller">
                 <div class="small-box">
-                    <img src="highlights/minimalistic-mug.jpg" alt="Small Coffee 1">
-                    <a href="small1.html">Small Product 1</a>
+                    <img src="bilder/bild5.webp" alt="Decaf Coffee">
+                    <div class="small-box-title"><a href="small2.html">Decaf Coffee</a></div>
                 </div>
                 <div class="small-box">
-                    <img src="images/pink-mug.jpg" alt="Small Coffee 2">
-                    <a href="small2.html">Small Product 2</a>
+                    <img src="bilder/bild4.webp" alt="French Roast coffee beans">
+                    <div class="small-box-title"><a href="small2.html">French Roast</a></div>
+                </div>
+                <div class="small-box">
+                    <img src="bilder/bild4.webp" alt="French Roast coffee beans">
+                    <div class="small-box-title"><a href="small2.html">French Roast</a></div>
                 </div>
             </div>
         </section>
-        
-
-       <!--  <section id="recommendations">
-            <h2>Our Top Picks</h2>
-            <div class="product-card">
-                <img src="images/picking-beans.jpg" alt="Product 1">
-                <h3>Organic Ethiopian Coffee</h3>
-                <p>Rich and full-bodied flavor.</p>
-                <a href="products.html">Shop Now</a>
-            </div> -->
-            <!-- Repeat for other products -->
-        <!-- </section> -->
     </main>
 
-    <footer>
-        <p>&copy; 2024 Coffee Haven</p>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-button" aria-label="Open chatbot">Chat with us!</button>
+        <div id="chatbox" class="chatbox">
+            <div class="chatbox-header">
+                <span>Chatbot</span>
+                <button id="chatbox-close" class="chatbox-close" aria-label="Close chatbot">&times;</button>
+            </div>
+            <div class="chatbox-content">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" class="chatbox-input" placeholder="Type your message..." aria-label="Chat input">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; Dark Blend by GBG - Alla rättigheter förbehållna.</p>
+            <ul class="footer-links">
+                <li><a href="integritetspolicy.html">Privacy Policy</a></li>
+                <li><a href="villkor.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
+

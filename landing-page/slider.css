@@ -1,0 +1,61 @@
+
+
+.slider {
+    box-sizing: content-box;
+    grid-area: slider;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 400px; /* Keep consistent height */
+    margin: 0;
+    overflow: hidden; /* Prevent overflow */
+   /*  border: solid 2px blue; /* For debugging */
+   /* border-radius: 10px; */
+  /*  border: solid 10px white; */
+}
+
+.slider-item a {
+    display: none; /* hide link text in default state */
+}
+
+.slider-item img {
+    width: 100%; /* Ensure the image covers full width */
+    height: 100%; /* Make image fill the height */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: inherit;
+}
+
+.slider h3 {display:none} /* hide title in slider */
+
+.wrapper-text-slider {
+    grid-area: wrapper;
+    gap: 20px;
+    background-color: #302623; /* Adjusted darker brown background */
+    padding: clamp(20px, 10%, 60px);
+    text-align: center; /* Center align the text */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Ensure the wrapper takes full height */
+}
+
+/* Increase line-height for better readability */
+.wrapper-text-slider h2 {
+    margin-bottom: 15px; /* Add space below heading */
+    line-height: 1.5; /* Optional: Adjust for readability */
+}
+
+.wrapper-text-slider p {
+    line-height: 1.6; /* Increase spacing between lines for better readability */
+    margin-bottom: 15px; /* Space at the bottom */
+}
+
+
