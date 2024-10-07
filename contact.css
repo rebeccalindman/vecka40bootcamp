@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 
 .contact-container {
-    background-color: #ffffff;
+    background-color: #3e2723;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -15,13 +14,13 @@
 h1 {
     margin-bottom: 10px;
     font-size: 1.8em;
-    color: #333;
+    color: burlywood;
 }
 
 p {
     font-size: 1em;
     margin-bottom: 20px;
-    color: #666;
+    color: burlywood;
 }
 
 /* Formuläret och formulärfälten */
@@ -38,7 +37,7 @@ p {
 label {
     margin-bottom: 5px;
     display: block;
-    color: #333;
+    color: burlywood;
 }
 
 input, textarea {
@@ -57,7 +56,7 @@ textarea {
 /* Skicka-knappen */
 button[type="submit"] {
     background-color: #007BFF;
-    color: #ffffff;
+    color: #0b0b0b;
     border: none;
     padding: 12px 20px;
     cursor: pointer;
@@ -93,46 +92,3 @@ button[type="submit"]:hover {
 .social-icons a.instagram {
     background: #e1306c;
 }
-=======
-body {
- background-color: #3E2723; /* Mörk bakgrund */
- color: #FFFFFF; /* Vit text för kontrast */
- font-family: Arial, sans-serif;
-}
-
-label, input, textarea, button {
- display: block;
- margin-bottom: 1rem;
- width: 100%;
- max-width: 400px; /* För att hålla layouten enkel */
-}
-
-input, textarea {
- padding: 10px;
- font-size: 16px;
- border: 2px solid #FFFFFF; /* Vit ram för bättre kontrast */
- background-color: #5D4037; /* Mörkare bakgrund för bättre kontrast */
- color: #FFFFFF; /* Vit text i formulärfälten */
-}
-
-input:focus, textarea:focus, button:focus {
- outline: 3px solid #FFCC80; /* Gul fokusram för tydlig fokussynlighet */
-}
-
-button {
- background-color: #FF5722; /* Kontrasterande färg för knappen */
- color: #FFFFFF;
- font-size: 18px;
- padding: 10px;
- border: none;
- cursor: pointer;
-}
-
-button:hover {
- background-color: #E64A19; /* Mörkare på hover */
-}
-
-button:focus {
- outline: 3px solid #FFCC80; /* Fokusram på knappen */
-}
->>>>>>> 6bd549dff5ca7b0a2b2f84a147a0a8b21dd14342
